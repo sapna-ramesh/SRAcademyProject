@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Me </title>
+</head>
+
+<style>
+body {
+background-color: #9bddff;
+}
+h1 {
+color: pink;
+}
+</style>
+
+
+<body>
+	<h1> Hello Sapna </h1>
+	<div>
+		<ul>
+			{% for key in my_friends %}
+			{% if my_friends[key] > 60 %}
+			<li style="color:purple">{{ my_friends[key] }} </li>
+			{% else %}
+			<li> <strong> {{ my_friends[key] }} </strong> </li>
+			{% endif %}
+			{% endfor %}
+	
+		</ul>
+	</div>
+
+<h1> Second Header </h1>
+<p> Just a paragraph:) </p>
+
+
+</body>
+</html>
